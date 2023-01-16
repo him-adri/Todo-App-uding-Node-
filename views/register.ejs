@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Todo Register</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Prosto+One&display=swap");
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        font-family: "Prosto One", cursive;
+      }
+      .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+      }
+      .nav-items {
+        display: flex;
+        flex: row;
+      }
+      .nav-name {
+        font-size: 2rem;
+      }
+      .nav-items form {
+        padding-left: 2rem;
+        font-size: 1rem;
+      }
+      .home {
+        width: 100%;
+        background-color: rgb(79, 26, 129, 0.815);
+        color: white;
+        border-radius: 10px;
+        padding: 0.8rem;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+      }
+      .home:hover {
+        background-color: rgb(105, 21, 185);
+        color: rgb(44, 28, 28);
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 3%;
+        margin-left: 15%;
+        background-color: rgba(128, 128, 128, 0.635);
+        width: 70%;
+        height: 80vh;
+        padding: 2rem;
+        border-radius: 10px;
+      }
+      .container-img img {
+        height: 20rem;
+        width: 20rem;
+        margin-right: 3rem;
+      }
+      .register-form {
+        padding: 1rem;
+        margin: 1rem;
+      }
+      input {
+        width: 100%;
+        font-size: 1rem;
+        margin-top: 0.8rem;
+        margin-bottom: 1rem;
+        border: none;
+        background: transparent;
+        border-bottom: 1px solid black;
+      }
+      input:focus {
+        outline: none;
+      }
+      label {
+        font-size: 1.3rem;
+      }
+      button {
+        width: 100%;
+        background-color: rgb(31, 29, 29);
+        border-radius: 10px;
+        color: white;
+        padding: 15px;
+        margin: 10px 0px;
+        font-family: "Prosto One", cursive;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+      }
+      button:hover {
+        background-color: rgb(243, 185, 185);
+        color: black;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="heading">
+        <div class="navbar">
+          <div class="nav-name">Todo App</div>
+          <div class="nav-items">
+            <form action="/">
+              <button class="home">Home</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="container-img">
+          <img src="https://media.tenor.com/pQoiCYsJR-EAAAAi/todolist-to.gif" />
+        </div>
+        <div class="register-form">
+          <form action="/register" class="register-form" method="POST">
+            <label for="name">Enter Name: </label>
+            <input type="text" name="name" placeholder="Enter UserName" />
+            <br />
+            <label for="email">Enter email: </label>
+            <input type="email" name="email" placeholder="Enter Email Id" />
+            <br />
+            <label for="username">Enter Username: </label>
+            <input type="text" name="username" placeholder="Enter UserName" />
+            <br />
+            <label for="phonenumber">Enter phonenumber: </label>
+            <input
+              type="number"
+              name="phonenumber"
+              placeholder="Enter Phone Number"
+            />
+            <br />
+            <label for="password">Enter password: </label>
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter Password"
+            />
+            <br />
+            <button type="submit">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- -->

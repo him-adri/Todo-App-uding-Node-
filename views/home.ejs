@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Prosto+One&display=swap");
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background-image: url("https://img.freepik.com/premium-photo/overhead-close-up-flat-lay-view-photo-blank-clear-spiral-diary-with-space-mock-up-branding-isolated-light-pastel-backdrop_352249-3808.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        font-family: "Prosto One", cursive;
+      }
+      .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+      }
+      .nav-items {
+        display: flex;
+        flex: row;
+      }
+      .nav-name {
+        font-size: 2rem;
+      }
+      .nav-items form {
+        padding-left: 2rem;
+        font-size: 1rem;
+      }
+      .login,
+      .register {
+        width: 100%;
+        background-color: orange;
+        border-radius: 10px;
+        color: black;
+        padding: 0.8rem;
+        border: none;
+        font-family: "Prosto One", cursive;
+        cursor: pointer;
+
+        transition: 0.3s ease-in-out;
+      }
+      .login:hover {
+        background-color: orangered;
+        color: white;
+      }
+      .register {
+        background-color: rgb(79, 26, 129,0.815);
+        color: white;
+      }
+      .register:hover {
+        background-color: rgb(105, 21, 185);
+        color: black;
+      }
+      .container .welcome-text {
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+      }
+      p {
+        text-align: center;
+        margin: 1rem;
+      }
+      .container-details {
+        margin-top: 10%;
+        margin-left: 33%;
+        color: black;
+        padding: 0.3rem;
+        width: 37%;
+        font-size: 1.4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <div class="nav-name">Todo App</div>
+        <div class="nav-items">
+          <form action="/login"><button class="login">Login</button></form>
+          <form action="/register">
+            <button class="register">Register Now</button>
+          </form>
+        </div>
+      </div>
+      <div class="container">
+        <div class="container-details">
+          <p class="welcome-text">Hello, Welcome to your Todo App 🤝</p>
+          <p>1) Register To Create your new Todo List ✨</p>
+          <p>2) Login to Get yout Todo List 💥</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
